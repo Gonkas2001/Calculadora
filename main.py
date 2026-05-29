@@ -14,7 +14,7 @@ def calculadora(num1: float, num2: float, operador: str) -> float:
     elif operador == "-":
         result = num1 - num2
     
-    elif operador == "*":
+    elif operador == "*":   
         result = num1 * num2
         
     elif operador == "%":
@@ -22,7 +22,16 @@ def calculadora(num1: float, num2: float, operador: str) -> float:
 
     return result
 
-
+def calculadora_v2(num1: float, num2: float, operador: str) -> float:
+    
+    operacoes = {
+        "+": num1 + num2
+        "-": num1 - num2
+        "*": num1 * num2
+        "/": num1 / num2
+        "**": num1 ** num2
+        "%": num1 % num2
+    }
 if __name__ == "__main__":
 
     while True:
