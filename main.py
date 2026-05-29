@@ -61,7 +61,17 @@ if __name__ == "__main__":
         escolha = input( "Opção: ")
         
         if escolha == "1"
-            resultado
+            resultado = calculadora(num1, num2, operador)
+            
+        elif escolha == "2"
+            resultado = calculadora(num1, num2, operador)
+            
+        else:
+            print("Resposta inválida")
+            time.sleep(2)
+            continue
+        
+        print(f"\n Resultado: {resultado}")
 
         except ValueError:
             print('Dados inválidos! -> Tente novamente!')
