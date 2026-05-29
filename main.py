@@ -54,7 +54,14 @@ if __name__ == "__main__":
         operador = input("Operador (+, -, /, **, %): ")
         num2= float(input("Segundo número:" ))
         
+        print("\n Escolha a versão desejada da calculadora: ")
+        print(" 1 - calculadora ()")
+        print(" 2 - calculadorav2 () ")
         
+        escolha = input( "Opção: ")
+        
+        if escolha == "1"
+            resultado
 
         except ValueError:
             print('Dados inválidos! -> Tente novamente!')
