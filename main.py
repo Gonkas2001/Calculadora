@@ -38,6 +38,10 @@ def calculadora_v2(num1: float, num2: float, operador: str) -> float:
         "**": num1 ** num2
         "%": num1 % num2
     }
+    
+    return operacoes.get(operador, float("nan"))
+
+
 if __name__ == "__main__":
 
     while True:
@@ -45,7 +49,12 @@ if __name__ == "__main__":
         try:
             print('Calculadora')
             print('----------------------------------\n')
-
+    
+        num1 = float(input( "Primeiro númmero: "))
+        operador = input("Operador (+, -, /, **, %): ")
+        num2= float(input("Segundo número:" ))
+        
+        
 
         except ValueError:
             print('Dados inválidos! -> Tente novamente!')
