@@ -31,12 +31,12 @@ def calculadora(num1: float, num2: float, operador: str) -> float:
 def calculadora_v2(num1: float, num2: float, operador: str) -> float:
     
     operacoes = {
-        "+": num1 + num2
-        "-": num1 - num2
-        "*": num1 * num2
-        "/": num1 / num2
-        "**": num1 ** num2
-        "%": num1 % num2
+        "+": num1 + num2,
+        "-": num1 - num2,
+        "*": num1 * num2,
+        "/": num1 / num2,
+        "**": num1 ** num2,
+        "%": num1 % num2,
     }
     
     return operacoes.get(operador, float("nan"))
