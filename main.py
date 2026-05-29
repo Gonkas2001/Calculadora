@@ -80,5 +80,8 @@ if __name__ == "__main__":
         except ZeroDivisionError:
             print('Impossível dividir por zero! -> Tente novamente!')
             time.sleep(2)
+            
+        if continuar not in ["s", "sim"]:
+            break
 
     print('\nVolte sempre!\n')
